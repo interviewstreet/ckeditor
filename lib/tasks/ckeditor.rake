@@ -2,7 +2,7 @@ require 'fileutils'
 
 namespace "ckeditor" do
   desc "Create nondigest versions of all ckeditor digest assets"
-  task "nondigest" => [:environment] do
+  task "nondigest" do
     fingerprint = /\-[0-9a-f]{32,64}\./
     path        = File.join Rails.root.to_s, "public", Ckeditor.base_path, "**/*"
     files       = Dir[path]
