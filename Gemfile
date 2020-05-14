@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'rails', '4.2.7'
+gem 'rails', '5.0.0'
 
 platforms :ruby do
   gem 'sqlite3'
@@ -12,18 +12,18 @@ platforms :ruby do
   end
 
   group :development, :test do
-    gem 'jquery-rails', '~> 4.0.4'
-    gem 'capybara', '>= 0.4.0'
+    gem 'jquery-rails', '~> 4.0.5'
+    gem 'capybara', '>= 2.7.1'
     gem 'mynyml-redgreen', '~> 0.7.1', require: 'redgreen'
   end
 
   group :active_record do
     gem 'paperclip'
     gem 'carrierwave'
-    gem 'dragonfly'
+    gem 'dragonfly', '>= 1.0.12'
     gem 'mini_magick'
-    gem 'refile', require: 'refile/rails'
-    gem 'refile-mini_magick'
+    gem 'refile', '>= 0.6.2', require: 'refile/rails'
+    gem 'refile-mini_magick', '>= 0.2.0'
   end
 
   group :mongoid do
