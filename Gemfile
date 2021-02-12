@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'rails', '4.2.7'
+gem 'rails', '6.0.3.5'
 
 platforms :ruby do
   gem 'sqlite3'
