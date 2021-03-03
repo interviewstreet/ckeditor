@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'rails', '4.2.7'
+gem 'rails', '6.0.3.5'
 
 platforms :ruby do
   gem 'sqlite3'
@@ -12,7 +12,7 @@ platforms :ruby do
   end
 
   group :development, :test do
-    gem 'jquery-rails', '~> 4.0.4'
+    gem 'jquery-rails', '~> 4.0.5'
     gem 'capybara', '>= 0.4.0'
     gem 'mynyml-redgreen', '~> 0.7.1', require: 'redgreen'
   end
